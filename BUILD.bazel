@@ -1,0 +1,6 @@
+java_binary(
+    name = "testResources",
+    srcs = glob(["src/main/java/**/*.java"]),
+    main_class = "com.revefi.Main",
+    resources = glob(["src/main/resources/**"]),  # data parameter produces the same result
+)
